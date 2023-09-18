@@ -12,7 +12,7 @@
         <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../Linux%E5%88%9D%E6%8E%A2/">
+        <link rel="next" href="../Linux/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>git初探 - syxb2的主站</title>
+        <title>Git - syxb2的主站</title>
       
     
     
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              git初探
+              Git
             
           </span>
         </div>
@@ -258,7 +258,7 @@
           
   
   <span class="md-ellipsis">
-    git初探
+    Git
   </span>
   
 
@@ -269,7 +269,7 @@
         
   
   <span class="md-ellipsis">
-    git初探
+    Git
   </span>
   
 
@@ -422,6 +422,16 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#git_5" class="md-nav__link">
     让本地git仓库管理我们的文件
@@ -444,14 +454,16 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    删除暂存区的文件
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    删除
+  <a href="#_14" class="md-nav__link">
+    删除本地仓库中的文件
   </a>
   
 </li>
@@ -461,13 +473,8 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     分支
   </a>
   
@@ -475,21 +482,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     创建分支
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_17" class="md-nav__link">
     切换到分支
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_18" class="md-nav__link">
     查看分支
   </a>
   
@@ -501,7 +508,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     克隆
   </a>
   
@@ -530,29 +537,77 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#_20" class="md-nav__link">
     删除指定的远程仓库
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
+  <a href="#_21" class="md-nav__link">
     修改远程仓库上的地址
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
+  <a href="#_22" class="md-nav__link">
     将远程仓库上的文件下载到本地（拉代码）
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
+  <a href="#_23" class="md-nav__link">
     将本地仓库上传到远程仓库
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    版本库
+  </a>
+  
+    <nav class="md-nav" aria-label="版本库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-loggit" class="md-nav__link">
+    使用git log命令来查看git版本库里面的信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset-hard-head" class="md-nav__link">
+    回退版本git reset --hard HEAD^
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cat-readmetxt" class="md-nav__link">
+    查看返回到的所在版本的内容cat readme.txt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset-hard-1094a" class="md-nav__link">
+    回到未来的版本git reset --hard 1094a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reflog" class="md-nav__link">
+    查看之前的所有版本的版本号git reflog
   </a>
   
 </li>
@@ -572,6 +627,47 @@
     用VS code管理git仓库
   </a>
   
+    <nav class="md-nav" aria-label="用VS code管理git仓库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-add" class="md-nav__link">
+    git add .
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-commit-m-name" class="md-nav__link">
+    git commit -m "name"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-push" class="md-nav__link">
+    git push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-pull" class="md-nav__link">
+    git pull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    分支
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -589,11 +685,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../Linux%E5%88%9D%E6%8E%A2/" class="md-nav__link">
+      <a href="../Linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Linux初探
+    Linux
   </span>
   
 
@@ -614,6 +710,46 @@
   
   <span class="md-ellipsis">
     利用mkdocs与GitHub搭建个人博客
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    操作系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../steam%2B%2B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    steam++
   </span>
   
 
@@ -1053,6 +1189,16 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#git_5" class="md-nav__link">
     让本地git仓库管理我们的文件
@@ -1075,14 +1221,16 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    删除暂存区的文件
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    删除
+  <a href="#_14" class="md-nav__link">
+    删除本地仓库中的文件
   </a>
   
 </li>
@@ -1092,13 +1240,8 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     分支
   </a>
   
@@ -1106,21 +1249,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     创建分支
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_17" class="md-nav__link">
     切换到分支
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_18" class="md-nav__link">
     查看分支
   </a>
   
@@ -1132,7 +1275,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     克隆
   </a>
   
@@ -1161,29 +1304,77 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#_20" class="md-nav__link">
     删除指定的远程仓库
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
+  <a href="#_21" class="md-nav__link">
     修改远程仓库上的地址
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
+  <a href="#_22" class="md-nav__link">
     将远程仓库上的文件下载到本地（拉代码）
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
+  <a href="#_23" class="md-nav__link">
     将本地仓库上传到远程仓库
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    版本库
+  </a>
+  
+    <nav class="md-nav" aria-label="版本库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-loggit" class="md-nav__link">
+    使用git log命令来查看git版本库里面的信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset-hard-head" class="md-nav__link">
+    回退版本git reset --hard HEAD^
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cat-readmetxt" class="md-nav__link">
+    查看返回到的所在版本的内容cat readme.txt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset-hard-1094a" class="md-nav__link">
+    回到未来的版本git reset --hard 1094a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reflog" class="md-nav__link">
+    查看之前的所有版本的版本号git reflog
   </a>
   
 </li>
@@ -1202,6 +1393,47 @@
   <a href="#vs-codegit" class="md-nav__link">
     用VS code管理git仓库
   </a>
+  
+    <nav class="md-nav" aria-label="用VS code管理git仓库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-add" class="md-nav__link">
+    git add .
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-commit-m-name" class="md-nav__link">
+    git commit -m "name"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-push" class="md-nav__link">
+    git push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-pull" class="md-nav__link">
+    git pull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    分支
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1292,8 +1524,8 @@ Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace�
 <p>然后我们可以查看仓库状态：<code>git status</code></p>
 <p><img alt="" src="../../picture/%E6%88%AA%E5%B1%8F2023-09-13%20%E4%B8%8B%E5%8D%886.29.36.png" /></p>
 <p><em>他的意思是此时git发现有一个新文件,但并没有把此文件纳入管理</em></p>
-<h5 id="git_5">让本地git仓库管理我们的文件</h5>
-<h6 id="_11">添加：</h6>
+<h3 id="git_5">让本地git仓库管理我们的文件</h3>
+<h4 id="_11">添加：</h4>
 <p>将目录或文件添加到暂存区：<code>git add</code></p>
 <p><em>取消暂存：<code>git rm --cached &lt;文件&gt;...</code></em></p>
 <p>添加一个或多个文件到暂存区：</p>
@@ -1308,7 +1540,7 @@ Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace�
 <p>将暂存区的文件添加到本地仓库：<code>git commit</code></p>
 <pre><code>git commit -m "&lt;本次提交动作的名称&gt;"
 </code></pre>
-<h6 id="_12">修改</h6>
+<h4 id="_12">修改</h4>
 <p>过程和新建一样的，添加完成</p>
 <p><em>相当于覆盖了原文件</em></p>
 <pre><code>git status
@@ -1319,7 +1551,10 @@ git status
 
 git commit -m ”向index.php添加内容（本次提交动作的名称）“
 </code></pre>
-<h5 id="_13">删除</h5>
+<h4 id="_13">删除暂存区的文件</h4>
+<pre><code>git reset HEAD &lt;要移出的文件名称&gt;
+</code></pre>
+<h4 id="_14">删除本地仓库中的文件</h4>
 <pre><code>git rm foo.php
 //将“删除filename”添加到暂存区
 
@@ -1327,21 +1562,21 @@ git commit -m ”向index.php添加内容（本次提交动作的名称）“
 
 git commit -m ”删除foo.php（本次提交动作的名称）“
 </code></pre>
-<h3 id="_14">分支</h3>
-<h4 id="_15">创建分支</h4>
+<h3 id="_15">分支</h3>
+<h4 id="_16">创建分支</h4>
 <pre><code>git checkout &lt;name&gt;
 </code></pre>
-<h4 id="_16">切换到分支</h4>
+<h4 id="_17">切换到分支</h4>
 <pre><code>git checkout &lt;name&gt;
 </code></pre>
-<h4 id="_17">查看分支</h4>
+<h4 id="_18">查看分支</h4>
 <pre><code>git branch -a
 查看所有分支
 
 git branch
 查看当前分支
 </code></pre>
-<h3 id="_18">克隆</h3>
+<h3 id="_19">克隆</h3>
 <pre><code>git clone &lt;youraddress&gt;
 </code></pre>
 <p>先<code>cd</code>到<code>被克隆文件夹</code>的<code>目标位置</code></p>
@@ -1353,21 +1588,81 @@ git branch
 
 意思是:添加1个远程库,代号是origin,地址是&lt;自己的链接&gt;,这里复制自己的远程仓库的https。
 </code></pre>
-<h4 id="_19">删除指定的远程仓库</h4>
+<h4 id="_20">删除指定的远程仓库</h4>
 <pre><code>git remote rm origin
 </code></pre>
-<h4 id="_20">修改远程仓库上的地址</h4>
+<h4 id="_21">修改远程仓库上的地址</h4>
 <pre><code>git remote set-url origin &lt;remote-url&gt;
 </code></pre>
-<h4 id="_21">将远程仓库上的文件下载到本地（拉代码）</h4>
+<h4 id="_22">将远程仓库上的文件下载到本地（拉代码）</h4>
 <pre><code>git pull gitee master:master
 </code></pre>
-<h4 id="_22">将本地仓库上传到远程仓库</h4>
+<h4 id="_23">将本地仓库上传到远程仓库</h4>
 <pre><code>git push gitee &lt;本地分支名&gt;:&lt;远程分支名&gt;
 
 意思是,把本地的版本(默认是master),推到代号为gitee的远程库去.
 </code></pre>
+<h3 id="_24">版本库</h3>
+<h4 id="git-loggit">使用<code>git log</code>命令来查看git版本库里面的信息</h4>
+<pre><code>baijiale@Bais-Mac myblog % git log
+commit c90576909de6020e9d1c4968c89753e4a97416a7 (HEAD -&gt; gh-pages)
+Author: syxb2 &lt;578767478@qq.com&gt;
+Date:   Mon Sep 18 19:29:46 2023 +0800
+
+    123
+
+commit 56f5e5731ae7ff0b65b307a7e36252dfd8939213 (origin/gh-pages)
+Author: syxb2 &lt;578767478@qq.com&gt;
+Date:   Sun Sep 17 11:40:23 2023 +0800
+
+    update5
+
+commit c41ee3bf10f549a0a245ee8ef3a5cd5b158cc425
+Author: syxb2 &lt;578767478@qq.com&gt;
+Date:   Sun Sep 17 11:27:58 2023 +0800
+
+    update23.9.17
+
+commit eafca4a520b85affa00f4e50716aa0b09736c04f
+Author: syxb2 &lt;578767478@qq.com&gt;
+Date:   Sat Sep 16 10:49:06 2023 +0800
+
+    gx3
+</code></pre>
+<p>其中按时间先后顺序顺序从上到下依次排列，最近的一次是<code>123</code>，最远的一次是<code>gx3</code>。</p>
+<p><code>c90576909de6020e9d1c4968c89753e4a97416a7</code>这一大串是commit id（版本号），我们就是根据版本号来查看之前的版本内容。</p>
+<h4 id="git-reset-hard-head">回退版本<code>git reset --hard HEAD^</code></h4>
+<p>其中<code>HEAD^</code>表示回退到上一个版本，<code>HEAD⌃⌃</code>表示上上个版本。
+如果前面的版本太多也可以写成<code>HEAD~100</code>，表示回退到前100个版本</p>
+<h4 id="cat-readmetxt">查看返回到的所在版本的内容<code>cat readme.txt</code></h4>
+<h4 id="git-reset-hard-1094a">回到未来的版本<code>git reset --hard 1094a</code></h4>
+<p>其中，1094a是版本号的前几位，版本号没必要写全，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。</p>
+<h4 id="git-reflog">查看之前的所有版本的版本号<code>git reflog</code></h4>
+<p><em>但是第二天已经关掉这个页面，不能看到版本号了怎么办呢？</em></p>
+<p>就可以使用<code>git reflog</code></p>
+<blockquote>
+<p>参考文档：https://zhuanlan.zhihu.com/p/139905052#:~:text=Git查看之前版本的内容%201%20%24%20git%20reset%20--hard%20HEAD%5E%20HEAD,version%20control%20system.%20Git%20is%20free%20software.%20更多项目</p>
+</blockquote>
 <h2 id="vs-codegit">用VS code管理git仓库</h2>
+<h3 id="git-add">git add .</h3>
+<p><code>更改</code>项目下的<code>+</code></p>
+<p><img alt="Alt text" src="../../picture/39977569dc579b32ba57d7051a3d3739.png" /></p>
+<h3 id="git-commit-m-name">git commit -m "name"</h3>
+<p><code>源代码管理</code>项目下的<code>对勾</code></p>
+<p>在弹出窗口第一行输入“name”（即你要备注的名字）</p>
+<p>然后点击对勾</p>
+<h3 id="git-push">git push</h3>
+<p><img alt="Alt text" src="../../picture/0322fe373e050d4cb4d6861f608bd7b3.png" /></p>
+<h3 id="git-pull">git pull</h3>
+<p><img alt="Alt text" src="../../picture/7f2024b4fef8e7e5cd960d8e9df5393b.png" /></p>
+<h3 id="_25">分支</h3>
+<p>vs code的左下角会显示当前分支</p>
+<p><code>源代码管理</code>的<code>...</code>中的<code>分支</code>选项</p>
+<blockquote>
+<p>参考文档：
+https://blog.csdn.net/sinat_16643223/article/details/111713296
+https://zhuanlan.zhihu.com/p/276376558?utm_id=0</p>
+</blockquote>
 
 
 
