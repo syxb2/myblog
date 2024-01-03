@@ -1,0 +1,1374 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>计算思维导论（左琳） - syxb2的主站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="syxb2的主站" class="md-header__button md-logo" aria-label="syxb2的主站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            syxb2的主站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              计算思维导论（左琳）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="syxb2的主站" class="md-nav__button md-logo" aria-label="syxb2的主站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    syxb2的主站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    欢迎
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    博客
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            博客
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/Git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/%E5%88%A9%E7%94%A8mkdocs%E4%B8%8EGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    利用mkdocs与GitHub搭建个人博客
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    操作系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/steam%2B%2B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    steam++
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/Vim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/Web%E5%89%8D%E7%AB%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web前端
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/Mathematica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mathematica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2/C%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C的学习笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    讲座
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            讲座
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%B2%E5%BA%A7/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大学生活指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%B2%E5%BA%A7/%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%E5%BC%80%E5%AD%A6%E5%85%B8%E7%A4%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    软件学院开学典礼
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%B2%E5%BA%A7/%E5%A4%A7%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE%EF%BC%88%E6%96%B0%E4%B8%9C%E6%96%B9%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开学第一课（新东方)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%B2%E5%BA%A7/%E6%88%90%E7%94%B5%E6%95%85%E4%BA%8B-%E6%A0%A1%E5%8F%B2%E6%9D%BF%E5%9D%97%EF%BC%88%E5%88%98%E4%B9%83%E7%90%A6%E6%95%99%E6%8E%88%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    成电故事-校史板块（刘乃琦教授）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%AE%B2%E5%BA%A7/%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E4%BC%9A/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重庆大学经验分享会
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    课程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    线上课程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            线上课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E4%B8%8A%E8%AF%BE%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%A4%A7%E5%AD%A6%E7%9A%84%E4%B8%80%E5%88%87%EF%BC%88%E6%A1%86%E6%A1%86%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于大学的一切（框框）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E4%B8%8A%E8%AF%BE%E7%A8%8B/%E5%A6%82%E4%BD%95%E5%AD%A6%E5%A5%BDc%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何学好c语言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E4%B8%8A%E8%AF%BE%E7%A8%8B/%E4%B8%AD%E5%9B%BD%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E4%B8%80%E8%AF%BE%EF%BC%88%E6%9D%A8%E5%B8%8C%E6%9D%B0%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    中国计算机教育中缺失的一课（杨希杰）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E4%B8%8A%E8%AF%BE%E7%A8%8B/bili%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E7%BD%91%E8%AF%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bili大学计算机学院网课
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%BF%E4%B8%8A%E8%AF%BE%E7%A8%8B/Markdown%E5%AD%A6%E4%B9%A0%28%E5%88%9D%E7%BA%A7%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown学习(初级)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    线下课程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            线下课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80I%EF%BC%88%E7%99%BD%E5%BF%A0%E5%BB%BA%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    程序设计与算法基础I
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5%EF%BC%88PBLF%EF%BC%89%EF%BC%88%E7%99%BD%E5%BF%A0%E5%BB%BA%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    程序设计与项目实践
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23912" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.9.12
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="23.9.12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      课程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      第一章 计算与计算思维
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一章 计算与计算思维">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算技术的演化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机的发展
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="计算机的发展">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机程序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      新计算技术
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="新计算技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      大数据技术
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="大数据技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      大数据的来源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      大数据的特征
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      大数据的架构
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      云计算
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23913" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.9.13
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="23.9.13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 逻辑计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 图灵机的运作原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 冯·诺依曼体系结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 冯·诺依曼体系结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本思想
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 可计算性与计算复杂性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 可计算性与计算复杂性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算，算法，计算过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算理论
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      可计算理论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      国庆作业
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      学术论文的撰写与投稿
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">计算思维导论（左琳）</h1>
+<h2 id="_2">作业</h2>
+<p>作业要求PDF或word格式，文件名改成姓名+学号最后四位</p>
+<h2 id="23912">23.9.12</h2>
+<p>计算思维导论是计算机技术的本质</p>
+<h3 id="_3">课程</h3>
+<p>总学时：</p>
+<pre><code>16学时。
+</code></pre>
+<p>内容：</p>
+<pre><code>6个主题 
+1.计算与计算思维 
+2.计算理论与计算模型 
+3.计算思维方法论 
+4.计算思维一算法基础 
+5.计算思维一程序基础 
+6.工程伦理与职业道德
+</code></pre>
+<p>课程考核： </p>
+<pre><code>随堂测试、讨论、作业计平时成绩：平时考核占30% 
+研究报告；期末考核占70%
+</code></pre>
+<p><img alt="Alt text" src="../media/IMG_4817.png" /></p>
+<p><em>搞研究一定要学好数学</em></p>
+<p><em>弄懂技术的本真</em></p>
+<h3 id="_4">第一章 计算与计算思维</h3>
+<h4 id="_5">计算技术的演化</h4>
+<p>真空管 - 电子管 - 晶体管 - 继承电路时代</p>
+<p>软件是要吧硬件用到极致</p>
+<p>计算机技术的发展实际是硬件的发展</p>
+<p><em>cpu的单核一定是串行计算（在多个进程之间迅速切换）</em></p>
+<h4 id="_6">计算机的发展</h4>
+<ol>
+<li>首个电子计算机</li>
+<li>图灵机（只是一个理论）</li>
+<li>冯·诺依曼体系结构（开创二进制）</li>
+<li>第二代电子计算机（应用晶体管）<em>晶体管：放大信号</em></li>
+<li>出现集成电路（60年代）</li>
+<li>大规模集成电路（70年代）</li>
+<li>超级计算机，笔记本电脑</li>
+<li>“第五代”计算机（现代）：人工智能，大模型/神经网络（alpha go，chatgpt）</li>
+</ol>
+<p><em>摩尔定律：大约每18个月，集成电路中的晶体管的数量就会翻倍，价格降低一倍</em></p>
+<h5 id="_7">计算机语言</h5>
+<p>1969 C，1983 C++，1991 python，1995 java</p>
+<h5 id="_8">计算机程序</h5>
+<p>ide software：VS，Xcode等</p>
+<h4 id="_9">新计算技术</h4>
+<h5 id="_10">大数据技术</h5>
+<h6 id="_11">大数据的来源</h6>
+<p>各类互联网平台</p>
+<h6 id="_12">大数据的特征</h6>
+<p>多样性，复杂性，快速增长，实时/快速</p>
+<h6 id="_13">大数据的架构</h6>
+<p>预处理（数据清洗） - 数据分析 - 数据存储</p>
+<p>大数据的处理技术：</p>
+<pre><code>采集 - 预处理 - 数据的存储与管理 - 数据的分析与挖掘 - 数据展现
+</code></pre>
+<p>应用：</p>
+<pre><code>siri，数据挖掘技术，聚类K-means，机器学习
+
+注：机器学习包括监督学习、非监督学习、强化学习
+</code></pre>
+<h5 id="_14">云计算</h5>
+<p>分布式处理</p>
+<p>并行处理</p>
+<h2 id="23913">23.9.13</h2>
+<h3 id="1">1. 逻辑计算</h3>
+<p>与计算：同为真才为真</p>
+<p>或运算：一个为真即为真</p>
+<p>非运算：取反相反</p>
+<p>异或运算：同为假，异为真</p>
+<p><img alt="Alt text" src="../media/IMG_4995.jpg" /></p>
+<h3 id="2">2. 图灵机的运作原理</h3>
+<p><img alt="Alt text" src="../media/IMG_4999.jpg" /></p>
+<p><img alt="Alt text" src="../media/IMG_5001.jpg" /></p>
+<h3 id="3">3. 冯·诺依曼体系结构</h3>
+<p>冯.诺伊曼在图灵等人工作的影响下，提出“存储程序式”电子数字计算机的基本结构与工作原理，给出计算机由控制器、运算器、存储器、输入设备、输出设备5个组成部分。现代计算机基本上都是采用冯.诺伊曼计算机体系结构。</p>
+<p><img alt="Alt text" src="../media/IMG_5002.jpg" /></p>
+<h4 id="_15">基本思想</h4>
+<ol>
+<li>指令和数据用二进制表示，指令由操作码和地址码组成，它们通过输入设备进入计算机。</li>
+<li>指令和数据以相同的方式存放于存储器，可按地址寻访</li>
+<li>控制器负责解释指令，连续自动执行。</li>
+<li>运算器负责执行指令的运算操作。</li>
+<li>计算机处理结果数据通过输出设备展现给用户。</li>
+</ol>
+<h4 id="_16">工作原理</h4>
+<p><img alt="Alt text" src="../media/IMG_5004.jpg" /></p>
+<h4 id="_17">特点</h4>
+<ol>
+<li>计算机以运算器为中心，输入、输出设备与存储器之间的数据传送都要经过运算器。</li>
+<li>采用存储程序方式存取访问代码与数据。</li>
+<li>存储器采用固定字长、顺序线性编址的一维结构。</li>
+<li>指令是由操作码和地址码组成。</li>
+<li>指令与数据均以二进制表示，并采用二进制运算。</li>
+<li>硬件与软件完全分开，硬件在结构和功能上是不变的，完全靠编制软件来适应用户的处理需求。</li>
+</ol>
+<h3 id="4">4. 可计算性与计算复杂性</h3>
+<h4 id="_18">计算，算法，计算过程</h4>
+<ol>
+<li>计算：计算是依据一定的法则对有关符号串进行变换的过程。计算是从已知符号开始，一步一步地改变符号串，经过有限步骤，最终得到一个满足预定条件的符号串的过程。</li>
+<li>算法：算法是解决问题的计算方法及其处理步骤</li>
+<li>计算过程：① 计算机以运算器为中心，输入、输出设备与存储器之间的数据传送都要经过运算器。 ② 采用存储程序方式存取访问代码与数据。 ③ 存储器采用固定字长、顺序线性编址的一维结构。 ④ 指令是由操作码和地址码组成。 ⑤ 指令与数据均以二进制表示，并采用二进制运算。 ⑥ 硬件与软件完全分开，硬件在结构和功能上是不变的，完全靠编制软件来适应用户的处理需求。</li>
+</ol>
+<h4 id="_19">计算理论</h4>
+<p>计算理论是一种用来研究计算过程及其功效的数学理论。</p>
+<p>计算理论主要包括算法、可计算性理论、计算复杂性理论、自动机理论和形式语言理论等。</p>
+<h4 id="_20">可计算理论</h4>
+<p>可计算性理论作为计算理论的一个分支，研究在不同的计算模型下哪些问题能够被计算机解决，哪些问题是不可能用计算机解决</p>
+<h2 id="_21">国庆作业</h2>
+<ol>
+<li>图灵机具有哪些计算能力？</li>
+</ol>
+<p>评估一阶逻辑与模拟任何其他图灵机的计算能力</p>
+<ol>
+<li>现代计算机在哪些方面突破了冯诺依曼计算机的限制？</li>
+</ol>
+<p>现代计算机可以实现并行多线程计算，可以实现分布式计算。而且现代计算机已经发展出克人工智能，这是冯诺依曼计算机无法做到的。</p>
+<h2 id="_22">学术论文的撰写与投稿</h2>
+<p>挂牛人的名字</p>
+<p>引用：要引用比自己层级更高的人或组织的文章</p>
+<p>不能一稿多投，翻译成不同语言也不行</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
